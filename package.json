@@ -7,7 +7,9 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "keywords": [
     "ui",
@@ -18,10 +20,20 @@
   "author": "SirKenG",
   "license": "ISC",
   "devDependencies": {
+    "@chromatic-com/storybook": "^1.9.0",
     "@rollup/plugin-commonjs": "^20.0.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.5.0",
     "@rollup/plugin-url": "^8.0.2",
+    "@storybook/addon-essentials": "^8.3.2",
+    "@storybook/addon-interactions": "^8.3.2",
+    "@storybook/addon-links": "^8.3.2",
+    "@storybook/addon-onboarding": "^8.3.2",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.5",
+    "@storybook/blocks": "^8.3.2",
+    "@storybook/react": "^8.3.2",
+    "@storybook/react-webpack5": "^8.3.2",
+    "@storybook/test": "^8.3.2",
     "@svgr/rollup": "^8.1.0",
     "@types/react": "^18.3.8",
     "@types/react-dom": "^18.3.0",
@@ -29,6 +41,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "rollup": "^2.79.1",
+    "storybook": "^8.3.2",
     "typescript": "^5.6.2"
   },
   "peerDependencies": {
