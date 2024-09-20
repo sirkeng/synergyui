@@ -1,6 +1,6 @@
 import { ReactNode, ButtonHTMLAttributes } from "react";
 import styled from "styled-components";
-import IconSearch from "../../assets/images/icon-search.svg";
+import IconSearch from "@assets/icon-search.svg";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
@@ -41,7 +41,7 @@ const SearchIcon = styled.img`
   height: 16px;
 `;
 
-export function Button({
+export default function Button({
   children,
   type = "button",
   search = false,
